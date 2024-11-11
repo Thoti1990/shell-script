@@ -2,10 +2,10 @@
 
 FRUITS=("Apple" "Banana" "Mango")
 
-echo "First Value is: ${FRUIT[0]}"
+echo "First Value is: ${FRUITS[0]}"
 
-echo "Second Value is: ${FRUIT[1]}"
+echo "Second Value is: ${FRUITS[1]}"
 
-echo "Third Value is: ${FRUIT[2]}"
+echo "Third Value is: ${FRUITS[2]}"
 
-echo "ALL Fruits: ${$FRUIT[@]}"
+echo "ALL Fruits: ${$FRUITS[@]}"
