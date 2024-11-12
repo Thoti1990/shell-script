@@ -22,7 +22,7 @@ then
     exit 1
 else
     echo "your are in root user"
-if
+fi
 
 yum install git -y &>> $LOGFILE
 
