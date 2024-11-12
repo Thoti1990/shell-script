@@ -9,7 +9,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-echo "Script started exequting at $Y $TIMESTAMP $N" &>> $LOGFILE
+echo "Script started exequting at $TIMESTAMP " &>> $LOGFILE
 
 VALIDATION(){
     if [ $1 -ne 0 ]
