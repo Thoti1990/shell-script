@@ -9,15 +9,15 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-echo "Script started exequting at $TIMESTAMP " &>> $LOGFILE
+echo -e "Script started exequting at $Y $TIMESTAMP $N " &>> $LOGFILE
 
 VALIDATION(){
     if [ $1 -ne 0 ]
     then
-        echo "ERROR:: $2.. $R FAILED $N"
+        echo -e "ERROR:: $2.. $R FAILED $N"
         exit 1
     else
-        echo "$2..  $G SUCCESS $N"
+        echo -e "$2..  $G SUCCESS $N"
     fi
 }
 
@@ -25,7 +25,7 @@ ID=$(id -u)
 
 if [ $ID -ne 0 ]
 then 
-    echo " $R ERROR:: Please run the script with root user $N"
+    echo -e " $R ERROR:: Please run the script with root user $N"
     exit 1
 else
     echo "your are in root user"
